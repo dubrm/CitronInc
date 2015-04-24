@@ -93,13 +93,13 @@ blockquote:before, blockquote:after{
     box-sizing: border-box;
 }
 #presentation{
-    background-image: url('img/bg-presentation.jpg');
+    background-image: url('../img/bg-presentation.jpg');
 }
 #production{
-    background-image: url('img/bg-production.jpg');
+    background-image: url('../img/bg-production.jpg');
 }
 #contact{
-    background-image: url('img/bg-contact.jpg');
+    background-image: url('../img/bg-contact.jpg');
 }
 #description{
     max-width:22rem;
