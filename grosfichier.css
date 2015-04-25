@@ -81,7 +81,7 @@ blockquote:before, blockquote:after{
     margin-top: 1rem;
 }
 .quote figcaption:before{
-    content: '– ';
+    content: '\2012  ';
 }
 
 /*==============SECTIONS AVEC BG==============*/
