@@ -78,6 +78,7 @@ blockquote:before, blockquote:after{
 }
 .quote figcaption{
     font-family: "Grand Hotel", serif;
+    font-size : 1.2rem;
     margin-top: 1rem;
 }
 .quote figcaption:before{
