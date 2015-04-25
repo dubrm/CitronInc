@@ -91,8 +91,10 @@ blockquote{
 /*==============SECTIONS AVEC BG==============*/
 #presentation, #production, #contact{
     color: #fff;
-    background-color: #000;
-    background-size: cover;
+    background:{
+        color: #000;
+        size: cover;
+    }
     min-height: 90%;
     box-sizing: border-box;
 }
@@ -125,12 +127,12 @@ header, footer{
 #hgroup{
     float: left;
     h1{
-    color: #ff0;
-    font-size: 2em;
-    line-height: 1em;
+        color: #ff0;
+        font-size: 2em;
+        line-height: 1em;
     }
     p{
-    font-style: italic;
+        font-style: italic;
     }
     @media (max-width: 540px){
         float: none;
@@ -147,8 +149,10 @@ header, footer{
         margin: 1rem auto 0;
     }
     input{
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-        font-size: 1.25rem;
+        font:{
+            family: "Open Sans", Helvetica, Arial, sans-serif;
+            size: 1.25rem;
+        }
         height: 2rem;
         width: 10rem;
         box-sizing: border-box;
@@ -167,7 +171,7 @@ header, footer{
         width: 2rem;
         background-color: transparent;
         &::after{
-            background-image: url('img/search.png');
+            background-image: url('../img/search.png');
             content: '';
             display: block;
             width: 2rem;
@@ -185,8 +189,10 @@ header, footer{
     overflow: hidden;
 }
 #email, #content{
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: 1.25rem;
+    font:{
+        family: "Open Sans", Helvetica, Arial, sans-serif;
+        size: 1.25rem;
+    }
     resize: none;
     display: block;
     width: 100%;
