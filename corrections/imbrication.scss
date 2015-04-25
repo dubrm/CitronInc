@@ -1,0 +1,279 @@
+/*===============RESET CSS==============*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+    &:before, &:after {
+        content: '';
+        content: none;
+    }
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*===============GENERAL/TYPO==============*/
+html, body{
+    height: 100%;
+}
+body{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    color: #222;
+    background-color: #eee;
+    margin: auto;
+}
+
+h1, h2{
+    font-family: "Grand Hotel", serif;
+}
+h1{
+    font-size: 3rem;
+    line-height: 1.5em;
+}
+h2{
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+section{
+    padding: 1rem;
+    overflow: hidden;
+}
+strong{
+    font-weight: bold;
+}
+
+blockquote{
+    font-style: italic;
+    &:before, &:after{
+        content: '"';
+    }
+}
+.quote{
+    text-align: right;
+    margin: 1rem 0;
+    blockquote{
+        font-size: 3rem;
+        line-height: 1em;
+    }
+    figcaption{
+        font: {
+            family: "Grand Hotel", serif;
+            size: 1.2rem;
+        }
+        margin-top: 1rem;
+        &:before{
+            content: '\2012  ';
+        }
+    }
+}
+
+
+/*==============SECTIONS AVEC BG==============*/
+#presentation, #production, #contact{
+    color: #fff;
+    background-color: #000;
+    background-size: cover;
+    min-height: 90%;
+    box-sizing: border-box;
+}
+#presentation{
+    background-image: url('../img/bg-presentation.jpg');
+}
+#production{
+    background-image: url('../img/bg-production.jpg');
+}
+#contact{
+    background-image: url('../img/bg-contact.jpg');
+}
+#description{
+    max-width:22rem;
+    @media all and (min-width: 740px){
+        max-width:48%;
+    }
+}
+
+
+/*==============HEADER & FOOTER==============*/
+header, footer{
+    background-color: #222;
+    color: #fff;
+    min-height: 10%;
+    padding: .5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#hgroup{
+    float: left;
+    h1{
+    color: #ff0;
+    font-size: 2em;
+    line-height: 1em;
+    }
+    p{
+    font-style: italic;
+    }
+    @media (max-width: 540px){
+        float: none;
+        text-align: center;
+    }
+}
+#search{
+    float: right;
+    margin-top: .75em;
+    position: relative;
+    @media (max-width: 540px){
+        float: none;
+        width: 12rem;
+        margin: 1rem auto 0;
+    }
+    input{
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 1.25rem;
+        height: 2rem;
+        width: 10rem;
+        box-sizing: border-box;
+        border: none;
+        background-color: #fff;
+        color: #222;
+        float: left;
+        padding: 0;
+    }
+    button{
+        box-sizing: border-box;
+        padding: 0;
+        border: none;
+        font-size: 0;
+        float: left;
+        width: 2rem;
+        background-color: transparent;
+        &::after{
+            background-image: url('img/search.png');
+            content: '';
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+/*================CONTACT================*/
+#contact form{
+    max-width: 708px;
+    overflow: hidden;
+}
+#email, #content{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    resize: none;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: rgba(255,255,255,.8);
+    color: #222;
+}
+label{
+    font-weight: bold;
+}
+
+
+/*================BOUTONS================*/
+.dark-button, .light-button{
+    font-family: "Grand Hotel", serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem;
+    width: 12.5rem;
+    border: none;
+    float: right;
+    @media (max-width: 740px){
+        display: block;
+        float: none;
+        margin: .5rem auto 0;
+    }
+}
+
+.dark-button{
+    background-color: #222;
+    color: #fff;
+    &:hover{
+        background-color: #444;
+    }
+}
+.light-button{
+    background-color: #ff0;
+    color: #222;
+    &:hover{
+        background-color: #ff4;
+    }
+}
+/*===============CARTES================*/
+.cards{
+    text-align: center;
+}
+.product{
+    display: inline-block;
+    vertical-align: top;
+    width: 12.5rem;
+    min-height: 20rem;
+    background-color: #fff;
+    color: #222;
+    padding: .5rem;
+    margin: .25rem;
+    text-align: left;
+    box-shadow: 2px 2px 2px 2px #888;
+    transition: box-shadow 1s;
+    &:hover{
+        box-shadow: 4px 4px 2px 2px #888;
+    }
+}
+.step{
+    display: inline-block;
+    vertical-align: top;
+    width: 12.5rem;
+    padding: .5rem;
+    margin: .25rem;
+}
+.client{
+    display: inline-block;
+    vertical-align: top;
+    width: 12.5rem;
+    background-color: #222;
+    color: #fff;
+    padding: .5rem;
+    margin: .25rem;
+    text-align: left;
+    box-shadow: 0 0 2px 2px #222;
+    img{
+        background-color: #fff;
+        border-radius: 50%;
+    }
+}
+.product img, .step img, .client img{
+    display: block;
+    margin: 0 auto .5rem auto;
+    width: 12.5rem;
+}
