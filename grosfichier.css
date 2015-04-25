@@ -160,7 +160,7 @@ header, footer{
     background-color: transparent;
 }
 #search button::after{
-    background-image: url('img/search.png');
+    background-image: url('../img/search.png');
     content: '';
     display: block;
     width: 2rem;
