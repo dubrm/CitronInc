@@ -14,4 +14,4 @@ Voici les sources des différentes images libres de droits utilisées dans l'exe
  - http://www.stockvault.net/photo/116317/splashing-lemon
  - http://www.stockvault.net/photo/115248/red-chilli
  - *Nosferatu le vampire*, F. W. Murnau (1922)
- - Mascotte Clem' par [Jiyong](http://jiyong.eu)
+ - Mascotte Clem' par [MaxRoyo](http://maxroyo.com)
