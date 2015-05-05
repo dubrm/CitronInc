@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Tutoriel Sass - ZdS</title>
-    <link href="stylesheets/screen.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:400,400italic' rel='stylesheet' />
+    <link href="grosfichier.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="http://zestedesavoir.com/static/images/favicon.png" />
 </head>
 <body>
@@ -52,7 +52,7 @@
                 </figcaption>
             </figure>
         </div>
-        <a href="#" class="dark-button">Tous nos produits</a>
+        <a href="#" class="more">Tous nos produits</a>
     </section>
 
     <section id="production">
@@ -72,7 +72,7 @@
                 <figcaption>…et pressés dans notre fabrique de manière artisanale.</figcaption>
             </figure>
         </div>
-        <a href="#" class="light-button">En savoir plus…</a>
+        <a href="#" class="more">En savoir plus…</a>
     </section>
     <section id="clients">
         <h1>Nos clients</h1>
@@ -99,7 +99,7 @@
                 </figcaption>
             </figure>
         </div>
-        <a href="#" class="dark-button">Tous nos clients</a>
+        <a href="#" class="more">Tous nos clients</a>
     </section>
     <section id="contact">
         <h1>Laissez-nous un message</h1>
@@ -108,7 +108,7 @@
             <input type="email" id="email" />
             <label for="content">Votre message :</label>
             <textarea id="content" rows="10"></textarea><br />
-            <input type="submit" value="Envoyer" class="light-button" />
+            <button type="submit" id="submit-button">Envoyer</button>
         </form>
     </section>
     <footer>

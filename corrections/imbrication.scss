@@ -206,7 +206,7 @@ label{
 
 
 /*================BOUTONS================*/
-.dark-button, .light-button{
+.more, #contact button{
     font-family: "Grand Hotel", serif;
     font-size: 1.25rem;
     text-decoration: none;
@@ -222,14 +222,14 @@ label{
     }
 }
 
-.dark-button{
+#produits .more, #clients .more{
     background-color: #222;
     color: #fff;
     &:hover{
         background-color: #444;
     }
 }
-.light-button{
+#production .more, #contact button{
     background-color: #ff0;
     color: #222;
     &:hover{
