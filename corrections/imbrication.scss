@@ -109,7 +109,7 @@ blockquote{
 }
 #description{
     max-width:22rem;
-    @media all and (min-width: 740px){
+    @media screen and (min-width: 740px){
         max-width:48%;
     }
 }
@@ -134,7 +134,7 @@ header, footer{
     p{
         font-style: italic;
     }
-    @media (max-width: 540px){
+    @media screen and (max-width: 540px){
         float: none;
         text-align: center;
     }
@@ -143,7 +143,7 @@ header, footer{
     float: right;
     margin-top: .75em;
     position: relative;
-    @media (max-width: 540px){
+    @media screen and (max-width: 540px){
         float: none;
         width: 12rem;
         margin: 1rem auto 0;
@@ -214,11 +214,11 @@ label{
     padding: .5rem;
     width: 12.5rem;
     border: none;
-    float: right;
-    @media (max-width: 740px){
-        display: block;
-        float: none;
-        margin: .5rem auto 0;
+    display: block;
+    margin: .5rem auto 0;
+    @media screen and (min-width: 740px){
+        display: inline-block;
+        float: right;
     }
 }
 
