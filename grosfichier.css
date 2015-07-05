@@ -103,7 +103,7 @@ blockquote:before, blockquote:after{
 #description{
     max-width:22rem;
 }
-@media all and (min-width: 740px){
+@media screen and (min-width: 740px){
     #description{
         max-width:48%;
     }
@@ -167,7 +167,7 @@ header, footer{
     padding: 0;
     margin: 0;
 }
-@media (max-width: 540px){
+@media screen and (max-width: 540px){
     #hgroup{
         float: none;
         text-align: center;
@@ -208,7 +208,8 @@ label{
     padding: .5rem;
     width: 12.5rem;
     border: none;
-    float: right;
+    display: block;
+    margin: .5rem auto 0;
 }
 
 #produits .more, #clients .more{
@@ -225,11 +226,10 @@ label{
 #production .more:hover, #contact button:hover{
     background-color: #ff4;
 }
-@media (max-width: 740px){
+@media screen and (min-width: 740px){
     .more, #contact button{
-        display: block;
-        float: none;
-        margin: .5rem auto 0;
+        display: inline-block;
+        float: right;
     }
 }
 
