@@ -222,7 +222,7 @@ label{
 
 
 /*================BOUTONS================*/
-.more, #contact button{
+@mixin button ($color, $background-color, $hover-color){
     font-family: $head-font;
     font-size: 1.25rem;
     text-decoration: none;
@@ -233,6 +233,11 @@ label{
     display: block;
     float: none;
     margin: .5rem auto 0;
+    background-color: $background-color;
+    color: $color;
+    &:hover{
+        background-color: $hover-color;
+    }
     @media #{$large-screen}{
         display: inline-block;
         float: right;
@@ -240,18 +245,10 @@ label{
 }
 
 #produits .more, #clients .more{
-    background-color: $dark;
-    color: $ultra-light;
-    &:hover{
-        background-color: $dark-hover;
-    }
+    @include button ($ultra-light, $dark, $dark-hover);
 }
 #production .more, #contact button{
-    background-color: $color;
-    color: $dark;
-    &:hover{
-        background-color: $color-hover;
-    }
+    @include button ($dark, $color, $color-hover);
 }
 /*===============CARTES================*/
 .cards{
